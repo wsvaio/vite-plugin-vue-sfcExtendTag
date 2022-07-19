@@ -1,10 +1,21 @@
 {
   "name": "vite-plugin-vue-sfcextendtag",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "支持.vue文件<template>根标签添加tag等属性",
-  "main": "index.ts",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -19,9 +30,14 @@
     "tag"
   ],
   "author": "wsvaio",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/wsvaio/vite-plugin-vue-sfcExtendTag/issues"
   },
-  "homepage": "https://github.com/wsvaio/vite-plugin-vue-sfcExtendTag#readme"
+  "homepage": "https://github.com/wsvaio/vite-plugin-vue-sfcExtendTag#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.6",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.2"
+  }
 }

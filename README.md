@@ -1,13 +1,10 @@
 # vite-plugin-vue-sfcextendtag
-
-## 使用
-
-1. 
+1. 安装🤨
 ```
 npm i vite-plugin-vue-sfcextendtag
 ```
 
-2. 
+2. 配置😮
 
 ```typescript
 // viteConfig.ts
@@ -30,7 +27,7 @@ import sfcExtendTag from "vite-plugin-vue-sfcextendtag"
 
 ```
 
-3. 
+3. 使用🙃
 
 ```html
 <!-- xxx.vue -->
@@ -66,5 +63,5 @@ import sfcExtendTag from "vite-plugin-vue-sfcextendtag"
 
 ```
 
-## 注意
+## 注意😱
 1. template 标签不能设置lang为其它类型，只允许普通标签写法

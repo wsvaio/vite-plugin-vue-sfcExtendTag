@@ -1,26 +1,22 @@
 {
   "name": "vite-plugin-vue-sfcextendtag",
-  "version": "0.0.10",
+  "version": "0.0.13",
   "description": "支持.vue文件<template>根标签添加tag等属性",
-  "types": "./types/index.d.ts",
-  "main": "./lib/index.js",
-  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "files": [
-    "dist",
-    "lib",
-    "types"
+    "dist"
   ],
   "exports": {
     ".": {
-      "require": "./lib/index.js",
-      "import": "./dist/index.js",
-      "types": "./types/index.d.ts"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
-    "build": "npm run build:ESNext && npm run build:CommonJS",
-    "build:ESNext": "tsc -m ESNext  --outDir dist",
-    "build:CommonJS": "tsc -m CommonJS --outDir lib"
+    "build": "unbuild"
   },
   "repository": {
     "type": "git",
@@ -40,9 +36,11 @@
     "url": "https://github.com/wsvaio/vite-plugin-vue-sfcExtendTag/issues"
   },
   "homepage": "https://github.com/wsvaio/vite-plugin-vue-sfcExtendTag#readme",
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^18.0.6",
     "typescript": "^4.7.4",
+    "unbuild": "^0.7.4",
     "vite": "^3.0.2"
   }
 }

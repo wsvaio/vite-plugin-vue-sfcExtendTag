@@ -1,5 +1,7 @@
-import { Plugin } from "vite";
-export default (): Plugin => {
+// import type { Plugin } from "vite";
+// export default (): Plugin => {
+
+export default () => {
 
   return {
     name: "plugin-vue:sfcExtendTag",

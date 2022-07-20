@@ -5,7 +5,7 @@ export default () => {
 
   return {
     name: "plugin-vue:sfcExtendTag",
-
+    enforce: "pre",
     transform(this, code, id, options?) {
       if (!id.endsWith(".vue")) return;
 

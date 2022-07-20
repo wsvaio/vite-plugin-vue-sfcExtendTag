@@ -1,8 +1,7 @@
 {
   "name": "vite-plugin-vue-sfcextendtag",
-  "version": "0.0.7",
+  "version": "0.0.10",
   "description": "支持.vue文件<template>根标签添加tag等属性",
-  "type": "module",
   "types": "./types/index.d.ts",
   "main": "./lib/index.js",
   "module": "./dist/index.js",

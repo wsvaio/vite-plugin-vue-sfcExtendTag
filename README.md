@@ -33,9 +33,8 @@ import sfcExtendTag from "vite-plugin-vue-sfcextendtag"
   ...
   plugins: [
     ...
-    // 必须在vue插件之前
-    sfcExtendTag(),
     vue(...),
+    sfcExtendTag(),
     ...
   ]
 

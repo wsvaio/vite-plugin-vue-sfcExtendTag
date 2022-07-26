@@ -10,7 +10,7 @@ export default () => {
       if (!id.endsWith(".vue")) return;
 
       // 获取第一个匹配到的template标签
-      const matched = code.match(/(<template[^>]*?(tag\s*?=\s*?"(\w*?)")[^>]*?>)(.*)<\/template>/msi);
+      const matched = code.match(/(<template[^>]*?(tag\s*?=\s*?["'](\w*?)["'])[^>]*?>)(.*)<\/template>/msi);
 
       if (matched) {
         const [, template, tag, tagName, content] = matched;
